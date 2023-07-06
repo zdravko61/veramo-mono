@@ -1,0 +1,53 @@
+{
+  "name": "veramo-react-native-tutorial",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "@ethersproject/shims": "^5.7.0",
+    "@sinonjs/text-encoding": "^0.7.2",
+    "@veramo/core": "^5.1.2",
+    "@veramo/data-store": "^5.1.2",
+    "@veramo/did-comm": "^5.2.0",
+    "@veramo/did-manager": "^5.1.2",
+    "@veramo/did-provider-ethr": "^5.1.2",
+    "@veramo/did-provider-peer": "^5.2.0",
+    "@veramo/did-provider-web": "^5.1.2",
+    "@veramo/did-resolver": "^5.1.2",
+    "@veramo/key-manager": "^5.1.2",
+    "@veramo/kms-local": "^5.1.2",
+    "@veramo/message-handler": "^5.1.2",
+    "cross-fetch": "^3.1.5",
+    "crypto-browserify": "^3.12.0",
+    "ethr-did-resolver": "^8.0.0",
+    "expo": "^48.0.19",
+    "expo-sqlite": "^11.1.1",
+    "expo-status-bar": "^1.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.71.8",
+    "react-native-get-random-values": "~1.8.0",
+    "react-native-web": "~0.18.9",
+    "stream-browserify": "^3.0.0",
+    "uuid": "^9.0.0",
+    "web-did-resolver": "^2.0.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~18.0.14",
+    "@types/react-native": "~0.70.6",
+    "@types/uuid": "^9.0.2",
+    "babel-plugin-rewrite-require": "^1.14.5",
+    "typescript": "^4.6.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
