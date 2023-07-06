@@ -36,10 +36,8 @@ async function main() {
 
     const message = createMediateRequestMessage(
         identifier.did,
-        // 'did:web:dev-didcomm-mediator.herokuapp.com',
-        'did:web:dev-vereign-mediator.herokuapp.com'
+        'did:web:dev-didcomm-mediator.herokuapp.com',
     )
-    // https://dev-vereign-mediator-30758e2648b8.herokuapp.com/
 
     const stored = await agent?.dataStoreSaveMessage({ message })
     console.log('stored?: ', stored)
@@ -53,9 +51,7 @@ async function main() {
     const result = await agent?.sendDIDCommMessage({
         packedMessage,
         messageId: message.id,
-        // recipientDidUrl: 'did:web:dev-didcomm-mediator.herokuapp.com',
-        recipientDidUrl:'did:web:dev-vereign-mediator.herokuapp.com'
-
+        recipientDidUrl: 'did:web:dev-didcomm-mediator.herokuapp.com',
     })
 
     console.log('result: ', result)
